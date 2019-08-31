@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Login_Test" >
+   <parameter name = "url" value = "https://www.facebook.com"/>
+    <classes>
+      <class name="com.facebook.in.login.LoginClass_Test">
+        <methods>
+          <include name ="loginTestFB" />
+        </methods>
+       </class>
+    </classes>
+   </test>
+</suite>
