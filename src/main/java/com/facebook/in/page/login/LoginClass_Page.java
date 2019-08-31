@@ -22,7 +22,7 @@ public class LoginClass_Page {
         UIUtils keywords = new UIUtils();
         public Logger APP_LOGS = Logger.getLogger(LoginClass_Page.class);
 
-        String configFilePath = "C:\\Users\\a241693\\Downloads\\config.properties";
+        String configFilePath = "C:\\Users\\singswet.CORPDOM\\Downloads\\config.properties";
 
         @FindBy(how = How.ID, using = "email")
         WebElement emailTextField;

@@ -20,7 +20,7 @@ public class LoginClass_Test {
 
     @BeforeMethod
     public void preCondition() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "<C:<\\Users\\a241693\\Documents\\Selenium Softwares\\chromedriver.exe>>");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\singswet.CORPDOM\\Documents\\Selenium Softwares\\Chrome Server Driver\\chromedriver.exe");
 
         driver = new ChromeDriver();
 
