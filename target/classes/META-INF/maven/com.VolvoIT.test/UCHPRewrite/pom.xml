@@ -52,6 +52,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
       <artifactId>commons-httpclient</artifactId>
       <version>3.1</version>
     </dependency>
+    <dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
   <dependency>
     <groupId>log4j</groupId>
     <artifactId>log4j</artifactId>

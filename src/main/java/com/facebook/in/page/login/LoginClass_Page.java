@@ -5,13 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-
 import com.abc.in.excelAndPropertiesFileReadWrite.PropertiesFileUtilities;
 import com.test.in.UIUtilityCommon.UIUtils;
 
-import common.Logger;
+import org.apache.log4j.Logger;;
 
 public class LoginClass_Page {
     
@@ -22,7 +19,7 @@ public class LoginClass_Page {
         UIUtils keywords = new UIUtils();
         public Logger APP_LOGS = Logger.getLogger(LoginClass_Page.class);
 
-        String configFilePath = "C:\\Users\\singswet.CORPDOM\\Downloads\\config.properties";
+        String configFilePath = ".\\resources\\config.properties";
 
         @FindBy(how = How.ID, using = "email")
         WebElement emailTextField;
