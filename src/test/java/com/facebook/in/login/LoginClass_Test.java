@@ -11,21 +11,18 @@ import org.testng.annotations.Test;
 
 import com.abc.in.excelAndPropertiesFileReadWrite.PropertiesFileUtilities;
 import com.facebook.in.page.login.LoginClass_Page;
+import com.test.in.UIUtilityCommon.BaseClass;
 
-public class LoginClass_Test {
+public class LoginClass_Test extends BaseClass{
 
-    WebDriver driver;
+    public static WebDriver driver;
     LoginClass_Page login;
     PropertiesFileUtilities readWrite;
 
     @BeforeMethod
     public void preCondition() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\singswet.CORPDOM\\Documents\\Selenium Softwares\\Chrome Server Driver\\chromedriver.exe");
 
-        driver = new ChromeDriver();
-
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver = getDriver();
         login = new LoginClass_Page(driver);
 
         Thread.sleep(2000);
